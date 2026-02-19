@@ -266,17 +266,34 @@ Claude Code 是一个在终端里运行的 AI 编程工具。你在命令行里�
 
 | 平台 | 入门价格 | 背后模型 | 特点 |
 |------|---------|---------|------|
-| **火山引擎 Coding Plan** | 8.9 元/首月 | 豆包、GLM、DeepSeek、Kimi 四选 | 模型选择最多 |
-| **Kimi Code** | 39 元/月 | Kimi K2.5 | 速度最快（100 token/秒），有独立 CLI |
-| **MiniMax Coding Plan** | $10/月 | MiniMax M2.5 | 配额最透明，内置搜索和图片理解 |
-| **智谱 GLM Coding** | ~20 元/月 | GLM-4.7 / GLM-5 | 国产模型中编程能力最强 |
+| **火山引擎 Coding Plan** | ¥8.91/首月 | 豆包、GLM、DeepSeek、Kimi 四选 | 模型选择最多 |
+| **Kimi Code** | ¥39/月 | Kimi K2.5 | 速度最快（100 token/秒），有独立 CLI |
+| **MiniMax Coding Plan** | ¥29/月 | MiniMax M2.1 / M2 | 配额最透明，内置搜索和图片理解 |
+| **智谱 GLM Coding** | ¥49/月 | GLM-4.7 / GLM-5 | 国产模型中编程能力最强 |
 
 这些平台都兼容 Claude Code 的接口协议——简单来说，你只需要改一个配置地址，Claude Code 就能用国产模型来工作。具体配置方法各平台官网都有教程。
 
-- 火山引擎：https://www.volcengine.com/activity/codingplan
-- Kimi Code：https://www.kimi.com/code
-- MiniMax：https://platform.minimaxi.com/docs/pricing/coding-plan
-- 智谱 GLM Coding：https://www.bigmodel.cn/glm-coding
+**火山引擎 Coding Plan**（https://www.volcengine.com/activity/codingplan）
+
+火山引擎提供 Lite（首月 ¥8.91，刊例价 ¥40/月）和 Pro（首月 ¥44.91，刊例价 ¥200/月）两档。支持四大国产模型自由切换，是模型选择最丰富的方案。
+
+![火山引擎 Coding Plan 定价页面](../images/volcengine-coding-plan.png)
+
+**MiniMax Coding Plan**（https://platform.minimaxi.com/docs/pricing/coding-plan）
+
+MiniMax 提供三档套餐：Starter（¥29/月，40 prompts/每 5 小时）、Plus（¥49/月，100 prompts/每 5 小时）、Max（¥119/月，300 prompts/每 5 小时）。配额制度最透明。
+
+![MiniMax Coding Plan 定价页面](../images/minimax-coding-plan.png)
+
+**智谱 GLM Coding**（https://www.bigmodel.cn/glm-coding）
+
+智谱提供三档：Lite（¥49/月）、Pro（¥149/月，最受欢迎）、Max（¥469/月）。GLM-4.7 在国产模型中编程能力排名第一。
+
+![智谱 GLM Coding 定价页面](../images/glm-coding-plan.png)
+
+**Kimi Code**（https://www.kimi.com/code）
+
+Kimi Code 提供 ¥39/月起的订阅，生成速度可达 100 token/秒，并且有自己独立的 CLI 工具。
 
 ### OpenAI Codex CLI
 
