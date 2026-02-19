@@ -60,11 +60,9 @@
 
 把这段文字粘贴到你选好的工具（Bolt.new / Trae / Cursor）的 AI 对话框里，回车，等 AI 工作。
 
-<!-- screenshot: 把 prompt 输入到 AI 工具后，AI 正在生成的过程 -->
+几十秒后，你就能看到 AI 做出来的第一个版本了。下面是一个真实的例子——左边是输入的 WAFS 需求描述，右边是 AI 生成的"每日一句"页面：
 
-几十秒后，你就能看到 AI 做出来的第一个版本了。
-
-<!-- screenshot: AI 生成的"每日一句"网页第一版效果 -->
+![用 WAFS 框架描述需求后，AI 生成的"每日一句"网页第一版](../images/daily-quote-first-version.png)
 
 ## 第三步：审视结果，提出修改
 
