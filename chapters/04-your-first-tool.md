@@ -141,7 +141,7 @@ node --version
 ```
 
 - **如果看到版本号**（比如 `v22.x.x`）→ 你已经准备好了，继续往下
-- **如果提示"command not found"** → 你需要先安装 Node.js。回到[第二章的"路线 B：编辑器端工具"](02-what-you-need.md#路线-b编辑器端工具cursor--trae)，按步骤安装好再回来
+- **如果提示"command not found"** → 你需要先安装 Node.js。回到[第二章的"按路线准备环境"](02-what-you-need.md#按路线准备环境)部分，找到"路线 B：编辑器端工具"，按步骤安装好再回来
 
 ### 第一步：下载安装
 
