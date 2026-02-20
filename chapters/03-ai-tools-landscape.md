@@ -293,7 +293,9 @@ Claude Code 是一个在终端里运行的 AI 编程工具。你在命令行里�
 | **MiniMax Coding Plan** | ¥29/月 | MiniMax M2.1 / M2 | 配额最透明，内置搜索和图片理解 |
 | **智谱 GLM Coding** | ¥49/月 | GLM-4.7 / GLM-5 | 国产模型中编程能力最强 |
 
-这些平台都兼容 Claude Code 的接口协议——简单来说，你只需要改一个配置地址，Claude Code 就能用国产模型来工作。具体配置方法各平台官网都有教程。
+这些平台都兼容 Claude Code 的接口协议——简单来说，你只需要改一个配置地址，Claude Code 就能用国产模型来工作。
+
+> **想试试？** 我们准备了一份详细的手把手配置指南，以智谱 GLM 为例：[Claude Code + 智谱 GLM 安装配置指南](appendix-claude-code-glm-setup.md)。其他平台的配置方式类似，可以参考各平台官网教程。
 
 **火山引擎 Coding Plan**（https://www.volcengine.com/activity/codingplan）
 
