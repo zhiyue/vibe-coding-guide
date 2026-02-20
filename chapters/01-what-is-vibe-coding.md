@@ -26,6 +26,16 @@
 
 这条推文获得了超过 450 万次浏览，"vibe coding"这个词迅速火遍了整个科技圈。到了 2025 年底，柯林斯英语词典甚至把它评为了**年度词汇**——可见它影响有多大。
 
+### 想深入了解？推荐 Karpathy 的几个视频
+
+如果你想更好地理解 vibe coding 背后的 AI 技术和趋势，Karpathy 本人有几个非常好的讲座视频，讲得深入浅出，即使没有技术背景也能看懂大部分内容：
+
+- **[Deep Dive into LLMs like ChatGPT](https://www.youtube.com/watch?v=EWvNQjAaOHw)**（深入理解大语言模型）——从零开始讲 ChatGPT 这类大语言模型是怎么训练出来的，帮你建立对 AI 能力和局限的基本认知。这是理解"AI 为什么能帮你写代码"的最好起点。
+- **[我如何使用大型语言模型](https://www.bilibili.com/video/BV1GU9MYDE3S/)**（How I Use LLMs）——Karpathy 分享他日常怎么用 AI 工具，包括编程、写作等各种场景，非常实用。
+- **[软件正在改变](https://www.bilibili.com/video/BV19fgrzJEGh/)**（Software Is Changing Again）——讲 AI 如何重新定义软件开发，从 Software 1.0（手写代码）到 Software 2.0（神经网络）再到 Software 3.0（用自然语言编程），vibe coding 正是 Software 3.0 的体现。
+
+> 以上 B 站链接带有中英字幕，YouTube 链接有英文字幕。不看也完全不影响后面的学习——只是如果你好奇"为什么 AI 能做到这些"，这几个视频能给你很好的答案。
+
 ## 用类比理解 Vibe Coding
 
 如果上面的解释还有点抽象，这里有两个类比可以帮你理解：

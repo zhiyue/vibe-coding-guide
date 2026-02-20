@@ -38,7 +38,7 @@ Vibe coding 的入门准备清单非常短。这一章我帮你把需要准备�
 
 ### AI 编程工具账号
 
-这是你最核心的工具。市面上有很多选择，比如 Bolt.new、v0.dev、Cursor 等等。每个工具具体是什么、怎么选，我们在第三章和第四章会详细介绍。
+这是你最核心的工具。市面上有很多选择，比如 Lovable、Bolt.new、Cursor 等等。每个工具具体是什么、怎么选，我们在第三章和第四章会详细介绍。
 
 这里你只需要知道：**你至少需要注册一个 AI 编程工具的账号**。具体注册哪个，等看完第三章再决定也不迟。
 
@@ -70,9 +70,9 @@ Vibe coding 的入门准备清单非常短。这一章我帮你把需要准备�
 
 好消息是，几乎所有主流的 AI 编程工具都有免费额度。你完全可以不花一分钱就开始体验 vibe coding：
 
+- **Lovable**：每天 5 次免费使用，新手体验最友好
 - **Bolt.new**：免费用户每月有 100 万 token 的额度（够你做好几个小项目了）
 - **v0.dev**：每月赠送价值 5 美元的免费额度
-- **Lovable**：每天 5 次免费使用
 - **GitHub Copilot**：免费版每月 2000 次代码补全 + 50 次 AI 对话
 - **Cursor**：免费版提供有限的 AI 请求额度，新用户还有 7 天 Pro 试用
 - **Trae**：字节跳动出品，每月 5000 次代码补全 + AI 对话额度，中文支持优秀
@@ -96,9 +96,9 @@ Vibe coding 的入门准备清单非常短。这一章我帮你把需要准备�
 
 | 工具 | 免费额度 | 付费起步价 |
 |------|----------|-----------|
+| Lovable | 每天 5 次 | $25/月 |
 | Bolt.new | 每月 100 万 token | $25/月 |
 | v0.dev | 每月 $5 额度 | $20/月 |
-| Lovable | 每天 5 次 | $25/月 |
 | Cursor | 有限请求 | $20/月 |
 | Trae | 5000 次补全/月 | $10/月 |
 | Windsurf | 每月 25 次 | $15/月 |
@@ -202,7 +202,7 @@ brew --version
 > ```
 > 按提示选择镜像源即可。
 
-**Windows 用户：** 你不需要 Homebrew。Windows 上安装软件直接从官网下载安装包就行，后面会给你具体的下载链接。
+**Windows 用户：** 你不需要 Homebrew。Windows 有自己的一套安装方式，接下来会详细说明。
 
 #### 2. 安装 Node.js
 
@@ -215,11 +215,17 @@ brew install node
 ```
 
 **Windows 用户：**
+
 1. 打开 https://nodejs.org
-2. 下载标有 "LTS"（长期支持版）的版本
-3. 双击安装，一路"下一步"
+2. 下载标有 **"LTS"（长期支持版）** 的版本——页面上会有一个绿色的大按钮
+3. 双击下载好的安装包（文件名类似 `node-v22.x.x-x64.msi`）
+4. 安装向导一路点"Next"，**注意不要取消勾选任何选项**，特别是 "Add to PATH" 这一项必须保持勾选
+5. 如果弹出"是否安装附加工具（Tools for Native Modules）"的页面，**勾选它**——这会自动帮你安装一些编译工具，以后安装某些依赖时会用到
+6. 安装完成后，**关闭所有已打开的终端窗口再重新打开**——新安装的工具需要重新打开终端才能生效
 
 <!-- screenshot: Node.js 官网下载页面，标注 LTS 版本的下载按钮 -->
+
+<!-- screenshot: Node.js 安装向导中 "Add to PATH" 选项和 "Tools for Native Modules" 选项 -->
 
 **验证安装成功：**
 
@@ -229,12 +235,42 @@ node --version
 
 看到类似 `v22.x.x` 的版本号就说明成功了。
 
-#### 3. 安装 Cursor 或 Trae
+> **Windows 常见问题：** 如果输入 `node --version` 提示"不是内部或外部命令"，说明 PATH 没有配好。最简单的方法是重新运行安装包，确保勾选了"Add to PATH"，然后**重启电脑**。
+
+#### 3. 安装 Git（Windows 用户必装）
+
+Git 是一个代码版本管理工具——你可以把它理解为代码的"时光机"，随时可以回到之前的版本。很多编辑器和项目都依赖它。
+
+**Mac 用户：** Mac 系统自带 Git，通常不需要额外安装。如果终端提示找不到 git，运行 `xcode-select --install` 安装即可。
+
+**Windows 用户：**
+
+1. 打开 https://git-scm.com
+2. 点击 "Download for Windows"，下载安装包
+3. 双击安装，大部分选项保持默认即可，但注意以下几点：
+   - **"Adjusting your PATH environment"** 这一步，选择 **"Git from the command line and also from 3rd-party software"**（通常是默认选项）
+   - **"Choosing the default editor"** 这一步，如果你不熟悉 Vim，建议改选 **"Use Visual Studio Code as Git's default editor"** 或 **"Use Notepad as Git's default editor"**
+   - 其他选项保持默认，一路 "Next" 到安装完成
+4. 安装完成后，重新打开终端
+
+<!-- screenshot: Git for Windows 安装向导中的 PATH 选项页面 -->
+
+**验证安装成功：**
+
+```bash
+git --version
+```
+
+看到类似 `git version 2.x.x` 的版本号就说明成功了。
+
+#### 4. 安装 Cursor 或 Trae
 
 - **Cursor：** 从 https://cursor.com 下载安装
 - **Trae：** 从 https://trae.ai 下载安装
 
 安装方式和普通软件一样，双击安装包，按提示操作即可。
+
+**Windows 用户小提示：** 安装 Cursor 或 Trae 时，如果有 **"Add to PATH"** 或 **"添加右键菜单"** 的选项，建议勾选。这样你以后可以在文件夹里右键选择"用 Cursor 打开"，非常方便。
 
 <!-- screenshot: Cursor 安装完成后首次打开的界面 -->
 
@@ -251,9 +287,10 @@ brew install python
 **Windows 用户：**
 1. 打开 https://python.org
 2. 下载最新稳定版
-3. 安装时**一定要勾选 "Add Python to PATH"**（很重要！）
+3. **安装第一个页面就有一个很重要的选项——一定要勾选 "Add python.exe to PATH"**（在页面最下方，默认是没有勾选的！）
+4. 然后点击 "Install Now" 即可
 
-<!-- screenshot: Python 安装界面，标注"Add to PATH"的勾选框 -->
+<!-- screenshot: Python 安装界面，标注"Add python.exe to PATH"的勾选框位置 -->
 
 **验证安装成功：**
 
@@ -263,6 +300,20 @@ python3 --version
 
 看到类似 `Python 3.12.x` 的版本号就说明成功了。Windows 用户可能需要用 `python --version`（没有 `3`）。
 
+### Windows 用户环境设置总结
+
+如果你是 Windows 用户选择路线 B，整个安装顺序是：
+
+1. **Node.js** → 从 nodejs.org 下载 LTS 版安装，勾选 Add to PATH
+2. **Git** → 从 git-scm.com 下载安装，保持默认选项
+3. **Cursor 或 Trae** → 从官网下载安装
+4. **重启电脑**（确保所有 PATH 设置生效）
+5. 打开终端，依次验证：`node --version`、`git --version`
+
+全部能显示版本号？恭喜，你的 Windows 开发环境就绑好了！
+
+> **建议使用 Windows Terminal：** Windows 11 已经自带了 Windows Terminal，Windows 10 用户可以在 Microsoft Store 里免费下载。它比传统的 PowerShell 窗口好看、好用，支持多标签页，推荐使用。
+
 ## 本章小结
 
 - 开始 vibe coding 只需要：一台能上网的电脑 + 一个浏览器
@@ -270,8 +321,8 @@ python3 --version
 - 注册一个 GitHub 账号（免费）
 - 所有 AI 编程工具都有免费额度，不花钱就能开始
 - 终端不可怕——就是用文字和电脑对话，需要时复制粘贴命令就行
-- 用网页端工具（Bolt/v0）不需要任何环境配置
-- 用编辑器端工具（Cursor/Trae）需要安装 Node.js，Mac 用户建议先装 Homebrew
+- 用网页端工具（Lovable/Bolt/v0）不需要任何环境配置
+- 用编辑器端工具（Cursor/Trae）需要安装 Node.js 和 Git，Mac 用户建议先装 Homebrew，Windows 用户注意勾选 Add to PATH
 
 ## 下一步预告
 
